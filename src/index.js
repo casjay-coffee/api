@@ -18,9 +18,8 @@ const arcgis = require('./endpoints/arcgis');
 const global = require('./endpoints/global');
 const nys = require('./endpoints/nys');
 const wnyt = require('./endpoints/wnyt');
-const chat = require('./chat/index');
 
-app.use(morgan('common'));
+app.use(morgan('combined'));
 app.use(helmet());
 app.use(cors());
 
@@ -72,8 +71,6 @@ app.get('/api/v1/version', cors(), async (req, res) => {
     res.send('An error has occurred');
   }
 });
-
-app.use('/api/v1/chat', chat);
 
 app.get('/api/v1/arcgis', cors(), async (req, res) => {
   const arcgis = await global();

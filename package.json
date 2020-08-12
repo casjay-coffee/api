@@ -10,7 +10,7 @@
     "deploy": "now --prod"
   },
   "keywords": [],
-  "author": "JMH <git-admin@casjaysdev.com> (https://casjay.now.sh)",
+  "author": "JMH <git-admin@casjaysdev.com> (https://casjay.coffee)",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.19.2",
